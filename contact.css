@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  background-color: #000;
+}
+
+.logo {
+  color: #8e6d6d;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+nav a.active,
+nav a:hover {
+  color: #8e6d6d;
+}
+
+main {
+  padding: 4rem 3rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #8e6d6d;
+  margin-bottom: 1rem;
+}
+
+.intro {
+  font-size: 1.2rem;
+  color: #ccc;
+  margin-bottom: 3rem;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.contact-method {
+  background-color: #111;
+  border: 1px solid #8e6d6d;
+  border-radius: 10px;
+  padding: 2rem;
+  width: 250px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-method:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 15px #8e6d6d;
+}
+
+.contact-method i {
+  font-size: 3rem;
+  color: #8e6d6d;
+  margin-bottom: 1rem;
+}
+
+.contact-method h2 {
+  font-size: 1.5rem;
+  color: #8e6d6d;
+  margin: 0.5rem 0;
+}
+
+.contact-method p {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+.contact-method a {
+  color: #8e6d6d;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-method a:hover {
+  color: #fff;
+}
+
+footer {
+  margin-top: 4rem;
+  text-align: center;
+  padding: 1rem;
+  border-top: 1px solid #333;
+  font-size: 0.9rem;
+  color: #444;
+}

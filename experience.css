@@ -1,0 +1,123 @@
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  background-color: #000;
+}
+
+.logo {
+  color: #8e6d6d;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+nav a.active,
+nav a:hover {
+  color: #8e6d6d;
+}
+
+main {
+  padding: 5rem 3rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #8e6d6d;
+  margin-bottom: 1rem;
+}
+
+.intro {
+  font-size: 1.3rem;
+  color: #ccc;
+  margin-bottom: 3rem;
+}
+
+.experience-container {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+
+.experience-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+  cursor: pointer;
+}
+
+.number {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #8e6d6d;
+  transform: translateY(-10px);
+  transition: transform 0.3s ease;
+}
+
+.label {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+}
+
+.popup {
+  position: absolute;
+  top: 100%;
+  transform: translateX(-50%) translateY(10px);
+  left: 50%;
+  background-color: #222;
+  color: #ccc;
+  width: 250px;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  font-size: 0.9rem;
+  z-index: 10;
+}
+
+.experience-item:hover .popup {
+  opacity: 1;
+  transform: translateX(-50%) translateY(-20px);
+}
+
+/* Responsive styling */
+@media (max-width: 600px) {
+  .experience-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .number {
+    font-size: 3rem;
+  }
+
+  .label {
+    font-size: 1.2rem;
+  }
+}
+footer {
+  text-align: center;
+}
+
