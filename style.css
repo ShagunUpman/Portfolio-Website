@@ -164,7 +164,7 @@ span{
 
 .social-icons a i, 
 .social-icons a svg {
-    font-size: 2.4rem; /* or 3rem if you want it bigger! */
+    font-size: 2.4rem;
 }
 
  .social-icons a:hover{
@@ -222,9 +222,9 @@ span{
     position: absolute;
     height: 100%;
     width: 2px;
-    background-color: white; /* or any light color that contrasts */
+    background-color: #8e6d6d; 
     animation: blink 0.7s steps(1) infinite;
-    left: 100%; /* ensures it's after the text */
+    left: 100%; 
     
 }
 @keyframes blink {
@@ -274,6 +274,23 @@ span{
         margin-top: 4rem;
     }
 }
+@media (max-width: 995px) {
+    nav {
+        display: flex !important; /* Always show on small screens */
+        position: static;
+        flex-direction: column;
+        align-items: center;
+        background-color: transparent;
+        border: none;
+        padding: 0;
+    }
+
+    nav a {
+        font-size: 2rem;
+        margin: 1rem;
+    }
+}
+
 
 footer {
   text-align: center;
